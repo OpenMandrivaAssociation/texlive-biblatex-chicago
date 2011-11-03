@@ -1,3 +1,9 @@
+# revision 24274
+# category Package
+# catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-chicago
+# catalog-date 2011-10-12 18:51:21 +0200
+# catalog-license lppl1.3
+# catalog-version 0.9.8c
 Name:		texlive-biblatex-chicago
 Version:	0.9.8c
 Release:	1
@@ -57,6 +63,7 @@ package was previously known as biblatex-chicago-notes-df.
 %doc %{_texmfdistdir}/doc/latex/biblatex-chicago/cms-notes-sample.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex-chicago/dates-test.bib
 %doc %{_texmfdistdir}/doc/latex/biblatex-chicago/notes-test.bib
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,3 +74,5 @@ package was previously known as biblatex-chicago-notes-df.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
