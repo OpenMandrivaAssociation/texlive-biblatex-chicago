@@ -1,11 +1,11 @@
-# revision 24274
+# revision 24608
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-chicago
-# catalog-date 2011-10-12 18:51:21 +0200
+# catalog-date 2011-11-15 19:32:33 +0100
 # catalog-license lppl1.3
-# catalog-version 0.9.8c
+# catalog-version 0.9.8d
 Name:		texlive-biblatex-chicago
-Version:	0.9.8c
+Version:	0.9.8d
 Release:	1
 Summary:	Chicago style files for biblatex
 Group:		Publishing
