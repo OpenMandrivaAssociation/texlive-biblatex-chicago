@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This is a biblatex style that implements the Chicago 'author-
@@ -27,20 +25,12 @@ in the Chicago Manual of Style, 15th edition. The style
 implements entry types for citing audio-visual materials. The
 package was previously known as biblatex-chicago-notes-df.
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -64,7 +54,6 @@ package was previously known as biblatex-chicago-notes-df.
 %doc %{_texmfdistdir}/doc/latex/biblatex-chicago/cms-notes-sample.tex
 %doc %{_texmfdistdir}/doc/latex/biblatex-chicago/dates-test.bib
 %doc %{_texmfdistdir}/doc/latex/biblatex-chicago/notes-test.bib
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -75,5 +64,3 @@ package was previously known as biblatex-chicago-notes-df.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
