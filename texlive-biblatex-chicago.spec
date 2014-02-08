@@ -6,7 +6,7 @@
 # catalog-version 0.9.9
 Name:		texlive-biblatex-chicago
 Version:	0.9.9
-Release:	1
+Release:	2
 Summary:	Chicago style files for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-chicago
