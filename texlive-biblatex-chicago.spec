@@ -1,5 +1,5 @@
 Name:		texlive-biblatex-chicago
-Version:	1.0rc4
+Version:	1.0rc5
 Release:	1
 Summary:	Chicago style files for biblatex
 Group:		Publishing
