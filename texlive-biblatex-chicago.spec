@@ -1,5 +1,5 @@
 Name:		texlive-biblatex-chicago
-Version:	63789
+Version:	65037
 Release:	1
 Summary:	Chicago style files for biblatex
 Group:		Publishing
