@@ -1,6 +1,6 @@
 Name:		texlive-biblatex-chicago
-Version:	65037
-Release:	2
+Version:	70955
+Release:	1
 Summary:	Chicago style files for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-chicago
